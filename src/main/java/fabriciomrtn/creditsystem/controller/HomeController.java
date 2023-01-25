@@ -1,12 +1,14 @@
 package fabriciomrtn.creditsystem.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Home {
+public class HomeController {
+	
 	@GetMapping("/home")
-	public String home() {
+	public String Home(Model model) {
 		return "home";
 	}
 }
